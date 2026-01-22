@@ -44,13 +44,13 @@ nav {
     color: var(--gold);
 }
 
-/* Hero Section */
+/* Hero Section - Updated with your Office Image */
 .hero { 
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop');
+                url('Screen-Shot-2020-10-13-at-11.46.41-AM-1.jpg');
     background-size: cover; 
     background-position: center;
-    height: 75vh; 
+    height: 80vh; 
     display: flex; 
     align-items: center; 
     justify-content: center; 
@@ -61,6 +61,12 @@ nav {
 .hero h1 { 
     font-size: 55px; 
     margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 /* Buttons */
@@ -73,7 +79,12 @@ nav {
     display: inline-block; 
     font-family: 'Helvetica', sans-serif; 
     border-radius: 2px; 
-    margin-top: 20px;
+    margin-top: 25px;
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
 }
 
 /* Content Sections */
