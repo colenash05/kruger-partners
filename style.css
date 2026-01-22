@@ -1,47 +1,110 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.5">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
-    span.s1 {font-kerning: none}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">:root {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--black: #1a1a1a;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--gold: #c5a059;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--white: #ffffff;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>--gray: #f4f4f4;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">body { font-family: 'Georgia', serif; margin: 0; color: var(--black); line-height: 1.6; }</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">/* Navigation */</span></p>
-<p class="p1"><span class="s1">nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 8%; background: var(--white); border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 1000; }</span></p>
-<p class="p1"><span class="s1">.logo { font-size: 24px; font-weight: bold; letter-spacing: 2px; }</span></p>
-<p class="p1"><span class="s1">.nav-links a { margin-left: 25px; text-decoration: none; color: var(--black); font-family: 'Helvetica', sans-serif; font-size: 14px; font-weight: bold; }</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">/* Hero Section */</span></p>
-<p class="p1"><span class="s1">.hero {<span class="Apple-converted-space"> </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&amp;w=2070&amp;auto=format&amp;fit=crop');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background-size: cover; height: 75vh; display: flex; align-items: center; justify-content: center; color: white; text-align: center;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p1"><span class="s1">.hero h1 { font-size: 55px; margin-bottom: 10px; }</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">/* Buttons */</span></p>
-<p class="p1"><span class="s1">.btn { background: var(--gold); color: white; padding: 15px 40px; text-decoration: none; font-weight: bold; display: inline-block; font-family: 'Helvetica', sans-serif; border-radius: 2px; }</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">/* Content Sections */</span></p>
-<p class="p1"><span class="s1">.page-content { padding: 80px 15%; text-align: center; }</span></p>
-<p class="p1"><span class="s1">.service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }</span></p>
-<p class="p1"><span class="s1">.service-item { padding: 30px; border: 1px solid #eee; background: var(--gray); }</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">footer { padding: 40px; background: var(--black); color: white; text-align: center; font-size: 12px; font-family: 'Helvetica', sans-serif; }</span></p>
-</body>
-</html>
+:root {
+    --black: #1a1a1a;
+    --gold: #c5a059;
+    --white: #ffffff;
+    --gray: #f4f4f4;
+}
+
+body { 
+    font-family: 'Georgia', serif; 
+    margin: 0; 
+    color: var(--black); 
+    line-height: 1.6; 
+}
+
+/* Navigation */
+nav { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 8%; 
+    background: var(--white); 
+    border-bottom: 1px solid #eee; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+.logo { 
+    font-size: 24px; 
+    font-weight: bold; 
+    letter-spacing: 2px; 
+}
+
+.nav-links a { 
+    margin-left: 25px; 
+    text-decoration: none; 
+    color: var(--black); 
+    font-family: 'Helvetica', sans-serif; 
+    font-size: 14px; 
+    font-weight: bold; 
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+/* Hero Section */
+.hero { 
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover; 
+    background-position: center;
+    height: 75vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: white; 
+    text-align: center;
+}
+
+.hero h1 { 
+    font-size: 55px; 
+    margin-bottom: 10px; 
+}
+
+/* Buttons */
+.btn { 
+    background: var(--gold); 
+    color: white; 
+    padding: 15px 40px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    display: inline-block; 
+    font-family: 'Helvetica', sans-serif; 
+    border-radius: 2px; 
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #b08e4d;
+}
+
+/* Content Sections */
+.page-content { 
+    padding: 80px 15%; 
+    text-align: center; 
+}
+
+.service-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px; 
+    margin-top: 40px; 
+}
+
+.service-item { 
+    padding: 30px; 
+    border: 1px solid #eee; 
+    background: var(--gray); 
+}
+
+footer { 
+    padding: 40px; 
+    background: var(--black); 
+    color: white; 
+    text-align: center; 
+    font-size: 12px; 
+    font-family: 'Helvetica', sans-serif; 
+}
